@@ -18,5 +18,8 @@
     "nodemailer": "^2.5.0",
     "pug": "^2.0.0-beta5",
     "recaptcha2": "^1.0.8"
+  },
+  "devDependencies": {
+    "uglify-js": "^2.7.3"
   }
 }

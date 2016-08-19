@@ -59,7 +59,6 @@ app.post('/', (req, res, next) => {
 
       const emailToGolfer = new Promise((resolve, reject) => {
         transporter.sendMail({
-  //        from: 'wigwam@no-reply.com',
           to: 'brandon@mindframe.com',
           subject: 'Email To Golfer',
           html: `<b>Thank you for registering</b>`
@@ -71,7 +70,6 @@ app.post('/', (req, res, next) => {
 
       const emailToHost = new Promise((resolve, reject) => {
         transporter.sendMail({
-    //      from: 'wigwam@no-reply.com',
           to: 'brandon@mindframe.com',
           subject: 'Email To Host',
           text: JSON.stringify(entry, null, 2)

@@ -9,7 +9,6 @@ $(window).scroll(function() {
 });
 
 $(function(){
-  console.log('test');
      $('.datepicker').datepicker();
      var navMain = $("#nav-main");
 
