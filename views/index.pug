@@ -1,0 +1,699 @@
+extends ./layout.pug
+
+block content
+  section.intro
+    .intro-body
+      .container
+        .row
+          .col-md-6.col-md-offset-3
+            .page-scroll
+              a(href='#photos')
+                img.brand-heading.img-responsive.animated.fadeIn(src='img/logo-main@2x.png', alt='Wigwam Interclub Challenge')
+              a.btn.btn-circle(href='#photos')
+                i.fa.fa-angle-down.animate
+  // photos Section
+  section#photos.content-section.photos.p-t-0
+    .section-pad
+      div(style='background:rgba(255,255,255,.8); margin-bottom:20px; padding:40px 0')
+        .container
+          .col-lg-12
+            h2.heading.clearfix
+              span.pull-left About Wigwam Resort
+              a.btn.btn-huge.btn-default.pull-right.hidden-xs(href='files/Wigwam-Resort-Map.pdf', target='_blank')
+                i.fa.fa-file-pdf-o(aria-hidden='true')
+                |   Wigwam Resort Map
+            p.lead
+              | The Wigwam is a 331 room luxury resort located in Litchfield Park just 30 minutes from Phoenix's Sky Harbor Airport.  Since opening in 1929, The Wigwam has welcomed guests from around the world to a destination resort rich with the spirit of "Authentic Arizona.""  In 2009, new ownership led by former Phoenix Suns owner and National Director of USA Basketball, Jerry Coangelo, began major renovations updating and restoring The Wigwam while embracing its rich history as one of the country's leading golf resorts.  Their consistent stewardship continues to improve the quality of the Interclub Challenge experience year after year.
+              a(href='http://www.wigwamgolf.com/', target='_blank')
+                | Learn more about Wigwam Golf Resort
+                i.fa.fa-angle-right(aria-hidden='true')
+      // Photo Gallery
+      .photo-section
+        .container
+          .row-fluid
+            // Gallery thumbnails
+            .gallery
+              .col-sm-12
+                h2 Resort & Golf Course Gallery
+              .col-xs-12.spinner-wrapper(style='display: none;')
+                .spinner(style='display: none;')
+              .gallery-container
+                .col-lg-2.col-md-2.col-xs-6.col-center
+                  a(href='img/course-photos/main-01.jpg', data-gallery='')
+                    img.thumb.img-thumbnail.img-responsive(src='img/course-photos/thumbs/thumb-01.jpg', alt='Wigwam Interclub Challenge')
+                .col-lg-2.col-md-2.col-xs-6.col-center
+                  a(href='img/course-photos/main-02.jpg', data-gallery='')
+                    img.thumb.img-thumbnail.img-responsive(src='img/course-photos/thumbs/thumb-02.jpg', alt='Wigwam Interclub Challenge')
+                .col-lg-2.col-md-2.col-xs-6.col-center
+                  a(href='img/course-photos/main-03.jpg', data-gallery='')
+                    img.thumb.img-thumbnail.img-responsive(src='img/course-photos/thumbs/thumb-03.jpg', alt='Wigwam Interclub Challenge')
+                .col-lg-2.col-md-2.col-xs-6.col-center
+                  a(href='img/course-photos/main-05.jpg', data-gallery='')
+                    img.thumb.img-thumbnail.img-responsive(src='img/course-photos/thumbs/thumb-05.jpg', alt='Wigwam Interclub Challenge')
+                .col-lg-2.col-md-2.col-xs-6.col-center
+                  a(href='img/course-photos/main-06.jpg', data-gallery='')
+                    img.thumb.img-thumbnail.img-responsive(src='img/course-photos/thumbs/thumb-06.jpg', alt='Wigwam Interclub Challenge')
+                .col-lg-2.col-md-2.col-xs-6.col-center
+                  a(href='img/course-photos/main-08.jpg', data-gallery='')
+                    img.thumb.img-thumbnail.img-responsive(src='img/course-photos/thumbs/thumb-08.jpg', alt='Wigwam Interclub Challenge')
+                .col-lg-2.col-md-2.col-xs-6.col-center
+                  a(href='img/course-photos/main-09.jpg', data-gallery='')
+                    img.thumb.img-thumbnail.img-responsive(src='img/course-photos/thumbs/thumb-09.jpg', alt='Wigwam Interclub Challenge')
+                .col-lg-2.col-md-2.col-xs-6.col-center
+                  a(href='img/course-photos/main-10.jpg', data-gallery='')
+                    img.thumb.img-thumbnail.img-responsive(src='img/course-photos/thumbs/thumb-10.jpg', alt='Wigwam Interclub Challenge')
+                .col-lg-2.col-md-2.col-xs-6.col-center
+                  a(href='img/course-photos/main-11.jpg', data-gallery='')
+                    img.thumb.img-thumbnail.img-responsive(src='img/course-photos/thumbs/thumb-11.jpg', alt='Wigwam Interclub Challenge')
+                .col-lg-2.col-md-2.col-xs-6.col-center
+                  a(href='img/course-photos/main-12.jpg', data-gallery='')
+                    img.thumb.img-thumbnail.img-responsive(src='img/course-photos/thumbs/thumb-12.jpg', alt='Wigwam Interclub Challenge')
+                .col-lg-2.col-md-2.col-xs-6.col-center
+                  a(href='img/course-photos/main-13.jpg', data-gallery='')
+                    img.thumb.img-thumbnail.img-responsive(src='img/course-photos/thumbs/thumb-13.jpg', alt='Wigwam Interclub Challenge')
+                .col-lg-2.col-md-2.col-xs-6.col-center
+                  a(href='img/course-photos/main-14.jpg', data-gallery='')
+                    img.thumb.img-thumbnail.img-responsive(src='img/course-photos/thumbs/thumb-14.jpg', alt='Wigwam Interclub Challenge')
+                // - Commented out to save on page load time / Feel free to pick and choose what images you would like to display. Keep it 12 max though. -
+                //
+                  -
+                  <div class="col-lg-2 col-md-2 col-xs-6 col-center"> <a class="" href="img/course-photos/main-16.jpg" data-gallery=""> <img class="thumb img-thumbnail img-responsive" src="img/course-photos/thumbs/thumb-16.jpg" alt="Wigwam Interclub Challenge"> </a> </div>
+                  <div class="col-lg-2 col-md-2 col-xs-6 col-center"> <a class="" href="img/course-photos/main-17.jpg" data-gallery=""> <img class="thumb img-thumbnail img-responsive" src="img/course-photos/thumbs/thumb-17.jpg" alt="Wigwam Interclub Challenge"> </a> </div>
+                  <div class="col-lg-2 col-md-2 col-xs-6 col-center"> <a class="" href="img/course-photos/main-18.jpg" data-gallery=""> <img class="thumb img-thumbnail img-responsive" src="img/course-photos/thumbs/thumb-18.jpg" alt="Wigwam Interclub Challenge"> </a> </div>
+                  <div class="col-lg-2 col-md-2 col-xs-6 col-center"> <a class="" href="img/course-photos/main-19.jpg" data-gallery=""> <img class="thumb img-thumbnail img-responsive" src="img/course-photos/thumbs/thumb-19.jpg" alt="Wigwam Interclub Challenge"> </a> </div>
+                  <div class="col-lg-2 col-md-2 col-xs-6 col-center"> <a class="" href="img/course-photos/main-20.jpg" data-gallery=""> <img class="thumb img-thumbnail img-responsive" src="img/course-photos/thumbs/thumb-20.jpg" alt="Wigwam Interclub Challenge"> </a> </div>
+                  <div class="col-lg-2 col-md-2 col-xs-6 col-center"> <a class="" href="img/course-photos/main-21.jpg" data-gallery=""> <img class="thumb img-thumbnail img-responsive" src="img/course-photos/thumbs/thumb-21.jpg" alt="Wigwam Interclub Challenge"> </a> </div>
+                  <div class="col-lg-2 col-md-2 col-xs-6 col-center"> <a class="" href="img/course-photos/main-22.jpg" data-gallery=""> <img class="thumb img-thumbnail img-responsive" src="img/course-photos/thumbs/thumb-22.jpg" alt="Wigwam Interclub Challenge"> </a> </div>
+                  <div class="col-lg-2 col-md-2 col-xs-6 col-center"> <a class="" href="img/course-photos/main-23.jpg" data-gallery=""> <img class="thumb img-thumbnail img-responsive" src="img/course-photos/thumbs/thumb-23.jpg" alt="Wigwam Interclub Challenge"> </a> </div>
+                  <div class="col-lg-2 col-md-2 col-xs-6 col-center"> <a class="" href="img/course-photos/main-24.jpg" data-gallery=""> <img class="thumb img-thumbnail img-responsive" src="img/course-photos/thumbs/thumb-24.jpg" alt="Wigwam Interclub Challenge"> </a> </div>
+                  <div class="col-lg-2 col-md-2 col-xs-6 col-center"> <a class="" href="img/course-photos/main-25.jpg" data-gallery=""> <img class="thumb img-thumbnail img-responsive" src="img/course-photos/thumbs/thumb-25.jpg" alt="Wigwam Interclub Challenge"> </a> </div>
+                  <div class="col-lg-2 col-md-2 col-xs-6 col-center"> <a class="" href="img/course-photos/main-27.jpg" data-gallery=""> <img class="thumb img-thumbnail img-responsive" src="img/course-photos/thumbs/thumb-27.jpg" alt="Wigwam Interclub Challenge"> </a> </div>
+                  <div class="col-lg-2 col-md-2 col-xs-6 col-center"> <a class="" href="img/course-photos/main-28.jpg" data-gallery=""> <img class="thumb img-thumbnail img-responsive" src="img/course-photos/thumbs/thumb-28.jpg" alt="Wigwam Interclub Challenge"> </a> </div>
+                  <div class="col-lg-2 col-md-2 col-xs-6 col-center"> <a class="" href="img/course-photos/main-29.jpg" data-gallery=""> <img class="thumb img-thumbnail img-responsive" src="img/course-photos/thumbs/thumb-29.jpg" alt="Wigwam Interclub Challenge"> </a> </div>
+                  <div class="col-lg-2 col-md-2 col-xs-6 col-center"> <a class="" href="img/course-photos/main-30.jpg" data-gallery=""> <img class="thumb img-thumbnail img-responsive" src="img/course-photos/thumbs/thumb-30.jpg" alt="Wigwam Interclub Challenge"> </a> </div>
+                  <div class="col-lg-2 col-md-2 col-xs-6 col-center"> <a class="" href="img/course-photos/main-31.jpg" data-gallery=""> <img class="thumb img-thumbnail img-responsive" src="img/course-photos/thumbs/thumb-31.jpg" alt="Wigwam Interclub Challenge"> </a> </div>
+                  <div class="col-lg-2 col-md-2 col-xs-6 col-center"> <a class="" href="img/course-photos/main-32.jpg" data-gallery=""> <img class="thumb img-thumbnail img-responsive" src="img/course-photos/thumbs/thumb-32.jpg" alt="Wigwam Interclub Challenge"> </a> </div>
+                  <div class="col-lg-2 col-md-2 col-xs-6 col-center"> <a class="" href="img/course-photos/main-33.jpg" data-gallery=""> <img class="thumb img-thumbnail img-responsive" src="img/course-photos/thumbs/thumb-33.jpg" alt="Wigwam Interclub Challenge"> </a> </div>
+                  <div class="col-lg-2 col-md-2 col-xs-6 col-center"> <a class="" href="img/course-photos/main-34.jpg" data-gallery=""> <img class="thumb img-thumbnail img-responsive" src="img/course-photos/thumbs/thumb-34.jpg" alt="Wigwam Interclub Challenge"> </a> </div>
+                  -
+              // Blueimp gallery
+              #blueimp-gallery.blueimp-gallery.blueimp-gallery-controls(style='display: none;')
+                .slides(style='width: 53550px;')
+                h3.title
+                a.prev ‹
+                a.next ›
+                a.close ×
+                a.play-pause
+                ol.indicator
+                .modal.fade
+                  .modal-dialog
+                    .modal-content
+                      .modal-header
+                        button.close(type='button', aria-hidden='true') ×
+                        h4.modal-title
+                      .modal-body.next
+                      .modal-footer
+                        button.btn.btn-default.pull-left.prev(type='button')
+                          i.glyphicon.glyphicon-chevron-left
+                          |  Previous
+                        button.btn.btn-primary.next(type='button')
+                          | Next
+                          i.glyphicon.glyphicon-chevron-right
+  // History Section
+  section#history.content-section
+    .history-section.section-pad
+      .container
+        .col-sm-8
+          h2.heading.orange History & Tradition
+          p.light
+            | The Wigwam is more than a resort; it is a part of Arizona history. Situated in the West Valley, this iconic hotel has become synonymous with Litchfield Park and is in many ways the cornerstone of that very community.
+          p.light
+            | Blending casual elegance with the charm of the Southwest, the Wigwam is a 440 acre getaway destination that promises unforgettable experiences, no matter the reason for visiting. Little wonder then that guests have come from around the Valley, throughout Arizona, all across the nation and the world.
+          p.light
+            | Boasting of luxury casitas and suites, a variety of award-winning restaurants and a full array of recreational amenities, pools and a spa, perhaps what The Wigwam is best known for are its 54 holes of championship-caliber golf. Among them are two Robert Trent Jones, Sr. courses that include the famed Gold Course, and The Patriot (formerly Blue Course). Rounding out the golf experience is The Heritage (formerly the Red Course), designed by renowned course architect Red Lawrence.
+            br
+            br
+            strong The Wigwam - an Arizona treasure since 1929.
+          hr.light
+          h3.heading.orange Tournament History
+          p.light
+            | In 1989, former Wigwam Vice President and General Manager Cecil Ravenswood, created the Interclub Challenge.  His vision lives on every January with the playing of this enjoyable Pro-Am tournament.  The event and the resort are a wonderful way to begin the New Year.  The Interclub Challenge has a loyal following of teams from Colorado, Minnesota, Wisconsin, Texas, South Carolina, California, Louisiana, Nebraska, and Kansas.  Please feel free to share tournament information with any of your golfing friends!
+          a.btn.btn-default.btn-huge.solid(href='files/Scoring-History-thru-2016.pdf', target='_blank')
+            i.fa.fa-file-pdf-o(aria-hidden='true')
+            |   View Interclub Challege Scoring History
+        .col-sm-4.animated.fadeInRight(style='padding-top:35px;')
+          img.thumbnail.img-responsive(src='img/wigwam-old.jpg', alt='Wigwam Interclub Challenge')
+          img.thumbnail.img-responsive(src='img/wigwam-old-1.jpg', alt='Wigwam Interclub Challenge')
+  // Story Section
+  section#details.content-section
+    .details-section.section-pad
+      .container
+        .col-lg-12
+          h2.heading.clearfix
+            span.pull-left The Details
+            span.page-scroll.pull-right
+              a.btn.btn-default.solid.btn-huge(href='#register') Register Now
+          p.lead Make your First Golf Tournament of 2017 Memorable
+        .col-sm-6
+          h3 28th Annual Wigwam Interclub Challenge
+          p.lead
+            i.fa.fa-calendar(aria-hidden='true')
+            strong January 10 - 15, 2017
+            |  - 54 Hole Pro-Am Event
+          p
+            strong ALL packages are 6 days and 5 nights.
+            |  Limited to first 44 teams with deposits verified by resort.
+            small
+              em NO refunds or adjustments for less than the 5 nights.
+          p
+            strong Early Bird Special:
+            |  Early arrivals enjoy a special room rate of $184/night for the nights of January 7th - 9th (EARLY BIRD green fee with cart $49 + tax will be available to amateurs for those days).
+          p
+            strong Include Amateur's Phone Number For A Valid Entry.
+            |  $400 TEAM DEPOSIT REQUIRED FOR ENTRY TO BE OFFICIAL ($100 per amateur: this deposit will appear on each amateurs room bill as a $100 credit).
+          p
+            strong Tournament Host Since 1989: Keith Kalny, PGA
+        .col-sm-6
+          h3 Eligibility
+          p
+            strong PRIVATE & SEMI PRIVATE CLUBS:
+            |   Each team will be identified as representing a private or semi-private club.  Only two amateurs need be from the same club for the team to represent that club.
+          p
+            strong TEAM MEMBERS:
+            |  A team consists of one golf professional and four amateurs with established and active USGA handicaps.  Two of the four amateurs should be current members of the same private or semi-private golf club.  The professional of the team does NOT need to be the professional employed by that club.  Amateurs will be using 85% of their USGA course handicap for both the team and individual competition.  The golf professional is responsible for verifying the above eligibility requirements.
+          p
+            strong LIMITED FIELD:
+            |  The field will be limited to the first 44 teams with entry forms and deposits submitted.
+        .col-sm-12
+          hr
+          h2 Schedule of Events
+          p
+            | For Practice Round Tee Times call
+            a(href='tel:800-909-4224') 800-909-4224
+            | . Practice Round Times can be booked starting December 1st.
+            br
+            small *When calling please ask to be transferred to the Golf Shop
+          .row
+            .col-sm-12
+              h3 Tuesday, January 10th
+              ul
+                li Arrival Day and Practice Rounds
+                li Gold & Heritage Courses
+            .col-sm-12
+              h3 Wednesday, January 11th
+              ul
+                li Practice Rounds - Gold & Heritage Courses
+                li Welcome Dinner -- 7:30 P.M.
+                li Complimentary Beer & Wine 7:00 to 8:00 P.M.
+            .col-sm-12
+              h3 Thursday, January 12th
+              ul
+                li First Round - Gold & Heritage Courses -- Tee Times Start 8:00 A.M.
+                li Format: Gold - Two Best Balls Net     Heritage - One Gross & One Net
+            .col-sm-12
+              h3 Friday, January 13th
+              ul
+                li Second Round - Gold & Heritage Courses -- Shotgun Start 10:00 A.M.
+                li Complimentary Breakfast Buffet at Red Allen's (starting 7:00 AM)
+                li Format: Gold - Two Best Balls Net      Heritage - One Gross & One Net
+                li 36 Hole Cut: Low 22 Teams (and ties) continue the 54-hole competition
+                li Teams not making the cut compete in Saturday's Consolation Event
+            .col-sm-12
+              h3 Saturday, January 14th
+              ul
+                li Final Round -- Gold & Heritage Courses
+                li Consolation Event - 10:00 A.M. Shotgun Heritage Course
+                li Consecutive Tee Times for Teams Making the Cut - 8:00 A.M. Gold Course
+                li Format: One Best Ball Gross & Two Best Balls Net (both courses!)
+                li Cocktails 6:30 P.M.   Dinner 7:30 P.M.
+            .col-sm-12
+              h3 Sunday, January 15th
+              ul
+                li Departure Day - Golf Shop Opens 7:00 A.M.
+          br
+          p
+            small
+              | Spouses are invited to all social functions. A special GOLF RATE for spouses of $49 (including cart) is available every day.
+              br
+              | Second rounds for tournament participants are complimentary
+          hr
+          h2 The Interclub Challenge Package Includes:
+          ul
+            li 6 DAYS / 5 NIGHTS ACCOMMODATIONS AT THE RESORT
+            li ENTRY INTO THE 54 HOLE PRO-AM TOURNAMENT
+            li SPECTACULAR TEE PRIZE PACKAGE
+            li
+              | UNLIMITED PRACTICE ROUNDS TUESDAY & WEDNESDAY UNLIMITED PLAY AFTER TOURNAMENT ROUNDS THURSDAY - SATURDAY
+            li DISCOUNTED GREEN FEES FOR SPOUSES NOT COMPETING ($49 / round)
+            li WEDNESDAY NIGHT WELCOME DINNER AND COCKTAILS
+            li SATURDAY NIGHT AWARDS DINNER AND COCKTAILS
+          h3 Package Prices
+          .row
+            .col-sm-12
+              p
+                strong Single = $2215
+                br
+                small 1 Amateur Private Room
+            .col-sm-12
+              p
+                strong Double = $1502 each
+                br
+                small 2 Amateurs Sharing a Room
+              p
+            .col-sm-12
+              p
+                strong Couple = $2439
+                br
+                small 1 Amateur with Non-Playing Guest
+              p
+            .col-sm-12
+              p
+                strong Amateur Not Staying at the Resort = $1285
+                br
+              p
+            .col-sm-12
+              p
+                strong
+                  em Golf Professional Entry Fee
+                br
+                |                             Single = $350   with Spouse = $549
+                br
+                small Includes Complimentary Room
+              p
+          h3 Team Deposit Policy
+          p
+            | Deposit = $400/TEAM - As the captain of the team, Golf Professionals will be required to submit a team deposit of $400 when entering.  This deposit will appear as a $100 credit on each amateurs room bill
+            | when they check out of the resort.
+          small NO DEPOSIT REQUIRED FOR PROFESSIONALS OR AMATEURS NOT STAYING AT THE RESORT.
+          br
+          br
+          ul
+            li All packages are for the full 6 days and 5 nights.
+            li Refunds or adjustments will not be made for less than the 5 night package.
+            li
+              | An amateur can share a room with the golf professional and pay the double price of $1468.
+            li
+              | Please contact Tournament Host Keith Kalny, PGA at
+              a(href='tel:651-235-5197') (651) 235-5197
+              |  or email him at
+              a(href='mailto:kkmngolf@yahoo.com') kkmngolf@yahoo.com
+          h3 Tournament Format
+          p
+            | THE FORMAT REMAINS THE SAME: The Gold Course format for the first two days will be two best net balls of the fivesome.  The Heritage Course format for the first two days will be one best gross plus one best net ball of the fivesome.
+          p
+            | There will be a cut after 36 holes with the low 22 teams and ties playing the Gold Course on the final day.  The third round format will be one gross, two net best balls.
+          p
+            | The remainder of the field, those teams not making the cut, will play the Heritage Course in the annual "Wait Till Next Year Consolation Event."  Teams not making the cut will also play one best ball gross, two net best balls (scores from round 1 and round 2 are eliminated for the consolation event).
+          p
+            | There will be individual low gross and low net competitions for amateurs during the first 36 holes of competition and an individual competition for the professionals during the same 36 holes.  Amateurs will use 85% of their USGA course handicap for team and individual scoring.
+          h3 Tee Times
+          p
+            | The field will be split in two.  You will play the Heritage Course the first day and the Gold the second day or vice versa.  For the first day, tee times will run consecutively off the first tee from 8:00 A.M. to 11:30 A.M.  The second day of play is a 10:00 AM shotgun start with a complimentary breakfast buffet at Red's Bar & Grill that morning.
+          h3 Practice Rounds, Second Rounds, and Spouses
+          p
+            | The tournament includes practice rounds on Tuesday and Wednesday.  Early Bird room rates and green fees apply to January 7th - 9th.  Green fees on Sunday, January 15th will be $60 plus tax.  The professional will be responsible for arranging practice round tee times. All second rounds for tournament participants are complimentary for every day of the event.  Spouses receive a special green fee rate of $49 plus tax per round including cart, January 10th through January 15th.  Spouses can call to make tee times starting December 1st.
+  // Event register Section
+  section#register.content-section.register
+    .section-pad
+      .container
+        .col-lg-12
+          h2.heading Register
+          h3 Wigwam Interclub Challenge - Tournament Entry Form
+          p Please fill out the information below and submit.
+        .col-lg-12
+          if errors
+            .alert.alert-danger
+              button.close(type='button', data-dismiss='alert') ×
+              strong We're sorry. You have some errors below.
+              each error in errors
+                div= error.msg
+          if success
+            .alert.alert-success
+              button.close(type='button', data-dismiss='alert') ×
+              strong Thank you for your submission. We will be in contact with you shortly.
+        form#registerForm(action="/" method="POST")
+          .col-sm-12
+            .well.pro.clearfix
+              h4 Professional Entry Information
+              .col-sm-6
+                .radio
+                  label
+                    input#optionsRadios3(type='radio', name='professional_room', value='complimentary_room_solo', checked=(body.professional_room == 'complimentary_room_solo'))
+                    strong Professional:
+                    |  Complimentary Room = $350
+              .col-sm-6
+                .radio
+                  label
+                    input#optionsRadios6(type='radio', name='professional_room', value='complimentary_room_with_spouse', checked=(body.professional_room == 'complimentary_room_with_spouse'))
+                    strong Professional with Spouse:
+                    |  Complimentary Room = $549
+              .col-sm-12
+                hr
+                .form-group
+                  label(for='club') Club Name:
+                  input#club.form-control.input-lg.req(type='text', value=body.professional_club_name, name='professional_club_name', placeholder='Clubhouse Name')
+              .col-sm-6
+                .form-group
+                  label(for='name') Professional Name
+                  input#name.form-control.input-lg.req(type='text', value=body.professional_name, name='professional_name', placeholder='First and Last Name')
+                .form-group
+                  label(for='email') Email
+                  input#email.form-control.input-lg.req(type='email', value=body.professional_email, name='professional_email', placeholder='Email Address')
+                .form-group
+                  label(for='arrival') Arrival Date
+                  .input-group.date.datepicker
+                    input#arrival.form-control.input-lg.req(type='text', value=body.professional_arrival_date, name='professional_arrival_date', placeholder='')
+                    span.input-group-addon
+                      i.fa.fa-calendar
+              .col-sm-6
+                .form-group
+                  label(for='phone') Phone
+                  input#phone.form-control.input-lg.req(type='phone', value=body.professional_phone, name='professional_phone', placeholder='xxx-xxx-xxxx')
+                .form-group
+                  label(for='roommate') Roommate
+                  input#roommate.form-control.input-lg(type='text', value=body.professional_roommate, name='professional_roommate', placeholder='')
+                .form-group
+                  label(for='phone') Shirt Size
+                  br
+                  label.radio-inline
+                    input#inlineRadio1(type='radio', name='professional_shirt_size', checked=(body.professional_shirt_size == 'S'), value='S')
+                    |  S
+                  label.radio-inline
+                    input#inlineRadio2(type='radio', name='professional_shirt_size', checked=(body.professional_shirt_size == 'M'), value='M')
+                    |  M
+                  label.radio-inline
+                    input#inlineRadio3(type='radio', name='professional_shirt_size', checked=(body.professional_shirt_size == 'L'), value='L')
+                    |  L
+                  label.radio-inline
+                    input#inlineRadio4(type='radio', name='professional_shirt_size', checked=(body.professional_shirt_size == 'XL'), value='XL')
+                    |  XL
+                  label.radio-inline
+                    input#inlineRadio5(type='radio', name='professional_shirt_size', checked=(body.professional_shirt_size == 'XXL'), value='XXL')
+                    |  XXL
+            .well.clearfix
+              h4 Amateur #1 Entry Information
+              .col-sm-6
+                .radio
+                  label
+                    input#optionsRadios1(type='radio', name='amateur1_room', value='1_amateur_private_room', checked=(body.amateur1_room == '1_amateur_private_room'))
+                    strong Single:
+                    |  1 Amateur Private Room = $2215
+                .radio
+                  label
+                    input#optionsRadios2(type='radio', name='amateur1_room', value='1_amateur_with_non-playing_guest', checked=(body.amateur1_room == '1_amateur_with_non-playing_guest'))
+                    strong Couple:
+                    |  1 Amateur with Non-Playing Guest = $2439/couple
+              .col-sm-6
+                .radio
+                  label
+                    input#optionsRadios4(type='radio', name='amateur1_room', value='2_amateurs_sharing_a_room', checked=(body.amateur1_room == '2_amateurs_sharing_a_room'))
+                    strong Double:
+                    |  2 Amateurs Sharing a Room = $1502/player
+                .radio
+                  label
+                    input#optionsRadios5(type='radio', name='amateur1_room', value='amateur_not_staying_at_resort', checked=(body.amateur1_room == 'amateur_not_staying_at_resort'))
+                    strong Amateur Not Staying at Resort:
+                    |  $1285
+                    small (no deposit required)
+              .col-sm-12
+                hr
+              .col-sm-6
+                .form-group
+                  label(for='name') Amateur #1 Name
+                  input#name.form-control.input-lg.req(type='text', value=body.amateur1_name, name='amateur1_name', placeholder='First and Last Name')
+                .form-group
+                  label(for='email') Email
+                  input#email.form-control.input-lg.req(type='email', value=body.amateur1_email, name='amateur1_email', placeholder='Email Address')
+                .form-group
+                  label(for='arrival1') Arrival Date
+                  .input-group.date.datepicker
+                    input#arrival1.form-control.input-lg.req(type='text', value=body.amateur1_arrival_date, name='amateur1_arrival_date', placeholder='')
+                    span.input-group-addon
+                      i.fa.fa-calendar
+              .col-sm-6
+                .form-group
+                  label(for='phone') Phone
+                  input#phone.form-control.input-lg.req(type='phone', value=body.amateur1_phone, name='amateur1_phone', placeholder='xxx-xxx-xxxx')
+                .form-group
+                  label(for='roommate') Roommate
+                  input#roommate.form-control.input-lg(type='text', value=body.amateur1_roommate, name='amateur1_roommate', placeholder='')
+                .form-group
+                  label(for='phone') Shirt Size
+                  br
+                  label.radio-inline
+                    input#inlineRadio1(type='radio', name='amateur1_shirt', value='S', checked=(body.amateur1_shirt == 'S'))
+                    |  S
+                  label.radio-inline
+                    input#inlineRadio2(type='radio', name='amateur1_shirt', value='M', checked=(body.amateur1_shirt == 'M'))
+                    |  M
+                  label.radio-inline
+                    input#inlineRadio3(type='radio', name='amateur1_shirt', value='L', checked=(body.amateur1_shirt == 'L'))
+                    |  L
+                  label.radio-inline
+                    input#inlineRadio4(type='radio', name='amateur1_shirt', value='XL', checked=(body.amateur1_shirt == 'XL'))
+                    |  XL
+                  label.radio-inline
+                    input#inlineRadio5(type='radio', name='amateur1_shirt', value='XXL', checked=(body.amateur1_shirt == 'XXL'))
+                    |  XXL
+            .well.clearfix
+              h4 Amateur #2 Entry Information
+              .col-sm-6
+                .radio
+                  label
+                    input#optionsRadios1(type='radio', name='amateur2_room', value='1_amateur_private_room', checked=(body.amateur2_room == '1_amateur_private_room'))
+                    strong Single:
+                    |  1 Amateur Private Room = $2215
+                .radio
+                  label
+                    input#optionsRadios2(type='radio', name='amateur2_room', value='1_amateur_with_non-playing_guest', checked=(body.amateur2_room == '1_amateur_with_non-playing_guest'))
+                    strong Couple:
+                    |  1 Amateur with Non-Playing Guest = $2439/couple
+              .col-sm-6
+                .radio
+                  label
+                    input#optionsRadios4(type='radio', name='amateur2_room', value='2_amateurs_sharing_a_room', checked=(body.amateur2_room == '2_amateurs_sharing_a_room'))
+                    strong Double:
+                    |  2 Amateurs Sharing a Room = $1502/player
+                .radio
+                  label
+                    input#optionsRadios5(type='radio', name='amateur2_room', value='amateur_not_staying_at_resort', checked=(body.amateur2_room == 'amateur_not_staying_at_resort'))
+                    strong Amateur Not Staying at Resort:
+                    |  $1285
+                    small (no deposit required)
+              .col-sm-12
+                hr
+              .col-sm-6
+                .form-group
+                  label(for='name') Amateur #2 Name
+                  input#name.form-control.input-lg.req(type='text', value=body.amateur2_name, name='amateur2_name', placeholder='First and Last Name')
+                .form-group
+                  label(for='email') Email
+                  input#email.form-control.input-lg.req(type='email', value=body.amateur2_email, name='amateur2_email', placeholder='Email Address')
+                .form-group
+                  label(for='arrival2') Arrival Date
+                  .input-group.date.datepicker
+                    input#arrival2.form-control.input-lg.req(type='text', value=body.amateur2_arrival_date, name='amateur2_arrival_date', placeholder='')
+                    span.input-group-addon
+                      i.fa.fa-calendar
+              .col-sm-6
+                .form-group
+                  label(for='phone') Phone
+                  input#phone.form-control.input-lg.req(type='phone', value=body.amateur2_phone, name='amateur2_phone', placeholder='xxx-xxx-xxxx')
+                .form-group
+                  label(for='roommate') Roommate
+                  input#roommate.form-control.input-lg(type='text', value=body.amateur2_roommate, name='amateur2_roommate', placeholder='')
+                .form-group
+                  label(for='phone') Shirt Size
+                  br
+                  label.radio-inline
+                    input#inlineRadio1(type='radio', name='amateur2_shirt', value='S' checked=(body.amateur2_shirt == 'S'))
+                    |  S
+                  label.radio-inline
+                    input#inlineRadio2(type='radio', name='amateur2_shirt', value='M' checked=(body.amateur2_shirt == 'M'))
+                    |  M
+                  label.radio-inline
+                    input#inlineRadio3(type='radio', name='amateur2_shirt', value='L' checked=(body.amateur2_shirt == 'L'))
+                    |  L
+                  label.radio-inline
+                    input#inlineRadio4(type='radio', name='amateur2_shirt', value='XL' checked=(body.amateur2_shirt == 'XL'))
+                    |  XL
+                  label.radio-inline
+                    input#inlineRadio5(type='radio', name='amateur2_shirt', value='XXL' checked=(body.amateur2_shirt == 'XXL'))
+                    |  XXL
+            .well.clearfix
+              h4 Amateur #3 Entry Information
+              .col-sm-6
+                .radio
+                  label
+                    input#optionsRadios1(type='radio', name='amateur3_room', value='1_amateur_private_room', checked=(body.amateur3_room == '1_amateur_private_room'))
+                    strong Single:
+                    |  1 Amateur Private Room = $2215
+                .radio
+                  label
+                    input#optionsRadios2(type='radio', name='amateur3_room', value='1_amateur_with_non-playing_guest', checked=(body.amateur3_room == '1_amateur_with_non-playing_guest'))
+                    strong Couple:
+                    |  1 Amateur with Non-Playing Guest = $2439/couple
+              .col-sm-6
+                .radio
+                  label
+                    input#optionsRadios4(type='radio', name='amateur3_room', value='2_amateurs_sharing_a_room', checked=(body.amateur3_room == '2_amateurs_sharing_a_room'))
+                    strong Double:
+                    |  2 Amateurs Sharing a Room = $1502/player
+                .radio
+                  label
+                    input#optionsRadios5(type='radio', name='amateur3_room', value='amateur_not_staying_at_resort', checked=(body.amateur3_room == 'amateur_not_staying_at_resort'))
+                    strong Amateur Not Staying at Resort:
+                    |  $1285
+                    small (no deposit required)
+              .col-sm-12
+                hr
+              .col-sm-6
+                .form-group
+                  label(for='name') Amateur #3 Name
+                  input#name.form-control.input-lg.req(type='text', value=body.amateur3_name, name='amateur3_name', placeholder='First and Last Name')
+                .form-group
+                  label(for='email') Email
+                  input#email.form-control.input-lg.req(type='email', value=body.amateur3_email, name='amateur3_email', placeholder='Email Address')
+                .form-group
+                  label(for='arrival3') Arrival Date
+                  .input-group.date.datepicker
+                    input#arrival3.form-control.input-lg.req(type='text', value=body.amateur3_arrival_date, name='amateur3_arrival_date', placeholder='')
+                    span.input-group-addon
+                      i.fa.fa-calendar
+              .col-sm-6
+                .form-group
+                  label(for='phone') Phone
+                  input#phone.form-control.input-lg.req(type='phone', value=body.amateur3_phone, name='amateur3_phone', placeholder='xxx-xxx-xxxx')
+                .form-group
+                  label(for='roommate') Roommate
+                  input#roommate.form-control.input-lg(type='text', value=body.amateur3_roommate, name='amateur3_roommate', placeholder='')
+                .form-group
+                  label(for='phone') Shirt Size
+                  br
+                  label.radio-inline
+                    input#inlineRadio1(type='radio', name='amateur3_shirt', value='S' checked=(body.amateur3_shirt == 'S'))
+                    |  S
+                  label.radio-inline
+                    input#inlineRadio2(type='radio', name='amateur3_shirt', value='M' checked=(body.amateur3_shirt == 'M'))
+                    |  M
+                  label.radio-inline
+                    input#inlineRadio3(type='radio', name='amateur3_shirt', value='L' checked=(body.amateur3_shirt == 'L'))
+                    |  L
+                  label.radio-inline
+                    input#inlineRadio4(type='radio', name='amateur3_shirt', value='XL' checked=(body.amateur3_shirt == 'XL'))
+                    |  XL
+                  label.radio-inline
+                    input#inlineRadio5(type='radio', name='amateur3_shirt', value='XXL' checked=(body.amateur3_shirt == 'XXL'))
+                    |  XXL
+            .well.clearfix
+              h4 Amateur #4 Entry Information
+              .col-sm-6
+                .radio
+                  label
+                    input#optionsRadios1(type='radio', name='amateur4_room', value='1_amateur_private_room', checked=(body.amateur4_room == '1_amateur_private_room'))
+                    strong Single:
+                    |  1 Amateur Private Room = $2215
+                .radio
+                  label
+                    input#optionsRadios2(type='radio', name='amateur4_room', value='1_amateur_with_non-playing_guest', checked=(body.amateur4_room == '1_amateur_with_non-playing_guest'))
+                    strong Couple:
+                    |  1 Amateur with Non-Playing Guest = $2439/couple
+              .col-sm-6
+                .radio
+                  label
+                    input#optionsRadios4(type='radio', name='amateur4_room', value='2_amateurs_sharing_a_room', checked=(body.amateur4_room == '2_amateurs_sharing_a_room'))
+                    strong Double:
+                    |  2 Amateurs Sharing a Room = $1502/player
+                .radio
+                  label
+                    input#optionsRadios5(type='radio', name='amateur4_room', value='amateur_not_staying_at_resort', checked=(body.amateur4_room == 'amateur_not_staying_at_resort'))
+                    strong Amateur Not Staying at Resort:
+                    |  $1285
+                    small (no deposit required)
+              .col-sm-12
+                hr
+              .col-sm-6
+                .form-group
+                  label(for='name') Amateur #4 Name
+                  input#name.form-control.input-lg.req(type='text', value=body.amateur4_name, name='amateur4_name', placeholder='First and Last Name')
+                .form-group
+                  label(for='email') Email
+                  input#email.form-control.input-lg.req(type='email', value=body.amateur4_email, name='amateur4_email', placeholder='Email Address')
+                .form-group
+                  label(for='arrival4') Arrival Date
+                  .input-group.date.datepicker
+                    input#arrival4.form-control.input-lg.req(type='text', value=body.amateur4_arrival_date, name='amateur4_arrival_date', placeholder='')
+                    span.input-group-addon
+                      i.fa.fa-calendar
+              .col-sm-6
+                .form-group
+                  label(for='phone') Phone
+                  input#phone.form-control.input-lg.req(type='phone', value=body.amateur4_phone, name='amateur4_phone', placeholder='xxx-xxx-xxxx')
+                .form-group
+                  label(for='roommate') Roommate
+                  input#roommate.form-control.input-lg(type='text', value=body.amateur4_roommate, name='amateur4_roommate', placeholder='')
+                .form-group
+                  label(for='phone') Shirt Size
+                  br
+                  label.radio-inline
+                    input#inlineRadio1(type='radio', name='amateur4_shirt', value='S', checked=(body.amateur4_shirt == 'S'))
+                    |  S
+                  label.radio-inline
+                    input#inlineRadio2(type='radio', name='amateur4_shirt', value='M' checked=(body.amateur4_shirt == 'M'))
+                    |  M
+                  label.radio-inline
+                    input#inlineRadio3(type='radio', name='amateur4_shirt', value='L' checked=(body.amateur4_shirt == 'L'))
+                    |  L
+                  label.radio-inline
+                    input#inlineRadio4(type='radio', name='amateur4_shirt', value='XL' checked=(body.amateur4_shirt == 'XL'))
+                    |  XL
+                  label.radio-inline
+                    input#inlineRadio5(type='radio', name='amateur4_shirt', value='XXL' checked=(body.amateur4_shirt == 'XXL'))
+                    |  XXL
+          .col-sm-12
+            div.g-recaptcha(data-sitekey="6LdGCigTAAAAAENgWRmr_awYAYWuaGdIHCCiregB")
+            br
+          .col-sm-12
+            input.btn.btn-default.btn-huge.btn-block.solid(type='submit', value='Submit My Information')
+        .col-sm-12
+          hr
+          br
+          h2 Prefer Email or Snail Mail?
+          p
+            | Download the entry form below. Fill out and email it to Keith -
+            a(href='mailto:kkmngolf@yahoo.com') kkmngolf@yahoo.com
+          p
+            small
+              | Keith Kalny (Interclub Challenge)
+              br
+              |                     Wigwam Resort Golf Shop
+              br
+              |                     451 N. Litchfield Rd.
+              br
+              |                     Litchfield Park, AZ. 85340
+          a.btn.btn-default(href='files/2017-ENTRY-FORM.pdf', target='_blank')
+            i.fa.fa-file-pdf-o(aria-hidden='true')
+            |   2017 Entry Form Download
+  // Contact Us Section
+  section#contact.content-section.contact
+    .section-pad
+      .container
+        .col-lg-12
+          h2.heading Contact
+        .col-lg-12
+          h3 Keith Kalny, PGA
+          div(style='margin-bottom:10px;')
+            i.fa.fa-envelope-o(aria-hidden='true')
+            a(href='mailto:kkmngolf@yahoo.com') kkmngolf@yahoo.com
+          div
+            i.fa.fa-phone(aria-hidden='true')
+            a(href='tel:651-235-5197') (651) 235-5197
+          br
+          p
+            | Keith Kalny (Interclub Challenge)
+            br
+            |                     Wigwam Resort Golf Shop
+            br
+            |                     451 N. Litchfield Rd.
+            br
+            |                     Litchfield Park, AZ. 85340
