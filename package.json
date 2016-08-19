@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "uglify": "uglifyjs public/js/*.js -m -c -o public/dist/js/interclub.min.js",
+    "imagemin": "imagemin img_raw/* --out-dir=public/img && imagemin img_raw/course-photos/* --out-dir=public/img/course-photos && imagemin img_raw/course-photos/thumbs/* --out-dir=public/img/course-photos/thumbs",
     "start": "node app.js"
   },
   "keywords": [],
@@ -21,6 +23,7 @@
     "recaptcha2": "^1.0.8"
   },
   "devDependencies": {
+    "imagemin-cli": "^3.0.0",
     "uglify-js": "^2.7.3"
   }
 }
