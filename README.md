@@ -3,4 +3,4 @@ Express.js website to showcase golf tournament
 
 ## usage
 1. npm install
-2. node index.js
+2. npm start
